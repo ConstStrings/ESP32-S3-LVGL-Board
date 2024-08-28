@@ -1,0 +1,18 @@
+{
+    "files.associations": {
+        "custom.h": "c",
+        "gui_guider.h": "c",
+        "guider_fonts.h": "c",
+        "lv_font.h": "c",
+        "communicate.h": "c",
+        "lv_fs.h": "c",
+        "memory": "c",
+        "lv_port_fs.h": "c",
+        "lvgl.h": "c",
+        "array": "cpp",
+        "string": "cpp",
+        "string_view": "cpp",
+        "*.tcc": "cpp",
+        "fstream": "cpp"
+    }
+}

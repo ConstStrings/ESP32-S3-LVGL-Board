@@ -1,0 +1,9 @@
+{
+    "files.associations": {
+        "custom.h": "c",
+        "gui_guider.h": "c",
+        "guider_fonts.h": "c",
+        "lv_font.h": "c",
+        "communicate.h": "c"
+    }
+}
