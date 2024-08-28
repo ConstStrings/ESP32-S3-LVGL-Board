@@ -4,6 +4,8 @@
 
 **基于ESP32-S3-WROOM-1-N16R8 设计的LVGL开发板，显示驱动ILI9488，采用并口驱动3.5寸LCD，电容触摸IC为FT6336U，可流畅运行LVGL图形库**
 
+***新版工程文件采用彩色丝印，请酌情删除或修改丝印***
+
 
 
 ## 目录组成
@@ -14,11 +16,30 @@
 
 ### 2.Firmware
 
-**存放ESP32-S3-WROOM1的LVGL库测试文件，用于测试板子是否能正常工作，也可以作为工程模板进行开发**
+**提供三个测试文件，用于检测硬件是否正常工作：**
+
+| ESP32_LVGL_Templete      | 模版工程，完整移植LVGL，可基于该文件二次开发                 |
+| ------------------------ | ------------------------------------------------------------ |
+| **ESP32_LVGL_SD_Demo**   | **挂载SD卡，从SD卡读取png并显示在屏幕上**                    |
+| **ESP32_Serial_Picture** | **对电脑屏幕截屏并通过串口发送给屏幕显示(帧率低，未做优化)** |
+
+
 
 ### **3.Project_demo**
 
-**存放示例工程，使用Platformio进行编写**
+**存放门禁系统示例工程，使用Platformio进行编写(本仓库只有GUI部分，RFID需要配合工程NFC-Database使用，开源地址：https://github.com/ConstStrings/NFC-Database)**
+
+ 
+
+### 5.Software
+
+**串口投屏示例上位机程序，使用python编写**
+
+
+
+### ======================8.28更新========================
+
+**已在STM32H750上实现从SD卡播放视频，帧率20+，猜测帧率受SD卡读取速度限制，后续将进行优化**
 
 
 
@@ -26,13 +47,15 @@
 
 
 
-<img src=".\4.imgs\IMG_20240522_223426.jpg" alt="IMG_20240522_165220" style="zoom:20%;" />
+<img src=".\4.imgs\IMG_20240522_223426.jpg" alt="IMG_20240522_165220" style="zoom:10%;" />
 
-<img src=".\4.imgs\IMG_20240522_223500.jpg" alt="IMG_20240522_165220" style="zoom:20%;" />
+<img src=".\4.imgs\IMG_20240522_223500.jpg" alt="IMG_20240522_165220" style="zoom:10%;" />
 
-<img src=".\4.imgs\IMG_20240521_200419.jpg" alt="IMG_20240522_165220" style="zoom:20%;" />
+<img src=".\4.imgs\IMG_20240521_200419.jpg" alt="IMG_20240522_165220" style="zoom:10%;" />
 
-<img src=".\4.imgs\IMG_20240522_165220.jpg" alt="IMG_20240522_165220" style="zoom:20%;" />
+<img src=".\4.imgs\IMG_20240522_165220.jpg" alt="IMG_20240522_165220" style="zoom:10%;" />
+
+​                                     											<img src=".\4.imgs\E3F91FB014D8399B4D1A5D15C00B4F14.jpg" style="zoom:20%;" />
 
 
 
@@ -76,7 +99,7 @@
 
 **视频链接：**
 
-<video src=".\4.imgs\VID_20240522_185915.mp4" width = "720px"></video>
+https://www.bilibili.com/video/BV1JJ4m1w731/
 
 **#程序源码见Project_demo**
 
